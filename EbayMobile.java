@@ -37,18 +37,12 @@ public class EbayMobile {
 	public void testCal() throws Exception {
 
 	   //locate the Text on the calculator by using By.name()
-	   WebElement username=driver.findElement(By.xpath("2"));
+	   WebElement username=driver.findElement(By.xpath("div[@id='username']"));
 	   username.sendKeys("samplelogin");
-	   WebElement password=driver.findElement(By.xpath("+"));
+	   WebElement password=driver.findElement(By.xpath("div[@id='password']"));
 	   password.sendKeys("login@123");	   
-	   WebElement loginbtn=driver.findElement(By.xpath("4"));
+	   WebElement loginbtn=driver.findElement(By.xpath(""div[@id='loginbutton']""));
 	   loginbtn.click();
-	   
-	   //locate the edit box of the calculator by using By.tagName()
-	   WebElement results=driver.findElement(By.tagName("EditText"));
-	   
-		//Check the calculated value on the edit box
-	assert results.getText().equals("6"):"Actual value is : "+results.getText()+" did not match with expected value: 6";
 
 	}
 
