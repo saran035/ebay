@@ -34,7 +34,7 @@ public class EbayMobile {
 	}
 
 	@Test
-	public void testCal() throws Exception {
+	public void testlogin() throws Exception {
 
 	   //locate the Text on the calculator by using By.name()
 	   WebElement username=driver.findElement(By.xpath("div[@id='username']"));
